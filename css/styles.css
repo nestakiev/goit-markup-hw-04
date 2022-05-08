@@ -11,7 +11,6 @@
     --grey-bcg: #F5F4FA;
     --hero-button-shadow: rgba(0, 0, 0, 0.15);
     --svg-grey: #AFB1B8;
-    /* --body-bcg: #E5E5E5; */
 }
 
 
@@ -130,10 +129,12 @@ align-items: center;
 
 .hero {
      /* background-color: var(--dark-grey);  */
-     text-align: center;
+    text-align: center;
+    margin: 0 auto;
     padding: 200px 0px;
     max-width: 1600px;
     height: 600px;
+
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
     background-repeat: no-repeat;
@@ -219,7 +220,7 @@ align-items: center;
 }
 
 .team-section .content {
-    padding: 30px 0;
+    padding: 30px 32px;
 }
 
 .work-section .list-item {
@@ -268,7 +269,6 @@ align-items: center;
 }
 
 .social-list {
-    padding: 0 32px;
     display: flex;    
 }
 
@@ -313,13 +313,14 @@ align-items: center;
 }
 
 .clients-section .link {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
     border: 1px solid var(--svg-grey);
     border-radius: 4px;
     color: var(--svg-grey);
-    padding: 16px 32px;    
 }
 
 .clients-section .icon {
@@ -386,11 +387,10 @@ align-items: center;
 /* Блок присоединяйтесь */
 
 .footer .flex {
-    align-items: flex-start;
+    align-items: baseline;
 }
 
 .join {
-    margin-top: 12px;
     margin-left: 70px;
     width: 206px;
 }
@@ -507,8 +507,14 @@ align-items: center;
     margin-bottom: 0px;
 }
 
-.portfolio .list-item .item:hover,
-.portfolio .list-item .item:focus {
+.item-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;    
+}
+
+.item-link:hover,
+.item-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
